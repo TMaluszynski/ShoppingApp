@@ -17,6 +17,8 @@ public class PriceCalculatorServiceServiceImpl implements PriceCalculatorService
 
     @Override
     public TotalPriceDTO calculatePrice(Long uuid, int quantity, Policy policy) {
+        if(quantity<=0)
+            throw new IllegalArgumentException("Quantity must be greater than 0");
         double itemBasePrice = itemService.getBasePrice(uuid);
         double totalBasePrice = itemBasePrice * quantity;
         double totalDiscount = discountCalculatorService.calculateDiscount(uuid, quantity, policy);
