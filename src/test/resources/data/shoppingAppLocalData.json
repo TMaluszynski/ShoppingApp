@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "basePrice": 100.00
+    },
+    {
+        "id": 2,
+        "basePrice": 150.00
+    },
+    {
+        "id": 3,
+        "basePrice": 90.00
+    },
+    {
+        "id": 4,
+        "basePrice": 75.00
+    },
+    {
+        "id": 5,
+        "basePrice": 30.00
+    }
+]
